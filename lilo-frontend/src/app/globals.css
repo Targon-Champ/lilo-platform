@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* LILO Color Palette */
+  --color-primary-blue: #2563eb;
+  --color-primary-dark-blue: #1d4ed8;
+  --color-primary-light-blue: #3b82f6;
+  
+  --color-secondary-teal: #14b8a6;
+  --color-secondary-dark-teal: #0f766e;
+  --color-secondary-light-teal: #2dd4bf;
+  
+  --color-neutral-white: #ffffff;
+  --color-neutral-light-gray: #f8fafc;
+  --color-neutral-medium-gray: #e2e8f0;
+  --color-neutral-dark-gray: #64748b;
+  --color-neutral-black: #0f172a;
+  
+  --color-status-success: #10b981;
+  --color-status-warning: #f59e0b;
+  --color-status-error: #ef4444;
+  --color-status-info: #3b82f6;
+  
+  --color-brand-logo-blue: #1e40af;
+  --color-brand-accent: #8b5cf6;
+  --color-brand-background: #f1f5f9;
+  
+  --color-lab-equipment: #94a3b8;
+  --color-lab-safety: #dc2626;
+  --color-lab-chemical: #8b5cf6;
+  --color-lab-sensor: #0284c7;
+}
+
+@theme {
+  --color-primary: var(--color-primary-blue);
+  --color-secondary: var(--color-secondary-teal);
+  --color-success: var(--color-status-success);
+  --color-warning: var(--color-status-warning);
+  --color-error: var(--color-status-error);
+  --color-info: var(--color-status-info);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
