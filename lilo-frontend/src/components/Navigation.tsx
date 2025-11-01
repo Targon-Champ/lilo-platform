@@ -2,7 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { MenuIcon, CloseIcon } from '@/components/ui';
+
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +13,14 @@ const Navigation = () => {
     <nav className="flex items-center justify-between p-6 bg-white shadow-sm">
       <div className="flex items-center space-x-2">
         <Link href="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center">
-            <span className="text-white font-bold text-xl">L</span>
+          <div className="w-10 h-10">
+            <Image 
+              src="/logo.png" 
+              alt="LILO Logo"
+              width={80}
+              height={80}
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="text-2xl font-bold text-blue-800">LILO</span>
         </Link>

@@ -14,7 +14,7 @@ const HeroSection = () => {
               Inventory Management System for Labs.
             </h1>
             <p className="mt-4 text-lg text-gray-600 max-w-xl">
-              L.I.L.O. uses computer vision and AI to track every chemical automatically. No RFID tags. No manual scanning. Just point cameras at your shelves and watch the magic.
+              L.I.L.O uses computer vision and AI to track every chemical automatically. No RFID tags. No manual scanning. Just point cameras at your shelves and watch the magic.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Button href="#" variant="primary" size="lg" className="shadow-md rounded-lg">
